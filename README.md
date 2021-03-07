@@ -34,7 +34,7 @@ http://localhost:8000/api/airport
 	http://localhost:8000/api/airport?query=Moscow
 
 
-	// Запрос 4: Поиск рейсов (GET)  
+		// Запрос 4: Поиск рейсов (GET)  
 http://localhost:8000/api/flight  
 // Нужно передать следующие GET-параметры:  
 
