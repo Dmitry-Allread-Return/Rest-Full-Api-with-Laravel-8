@@ -31,6 +31,6 @@ Route::post('booking', 'App\Http\Controllers\BookingController@booking');
 // Инфо о бронировании
 Route::get('booking/{code}', 'App\Http\Controllers\BookingController@bookingInfo');
 // Инфо о всех бронированиях юзера по токену
-Route::get('booking', 'App\Http\Controllers\BookingController@mybrone');
+Route::get('user/booking', 'App\Http\Controllers\BookingController@mybrone')->name('booking');
 // Инфо о юзере по токену
-Route::get('user', 'App\Http\Controllers\BookingController@user');
+Route::get('user', 'App\Http\Controllers\BookingController@user')->name('user');

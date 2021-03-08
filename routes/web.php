@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('user/booking', 'App\Http\Controllers\BookingController@redirectBrone');
+Route::get('user', 'App\Http\Controllers\BookingController@redirectUser');

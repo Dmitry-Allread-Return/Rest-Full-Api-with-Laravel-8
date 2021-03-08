@@ -141,8 +141,11 @@ class BookingController extends Controller
 
 
 
-    public function mybrone(Request $request) {
+    public function redirectBrone() {
+        return redirect()->route('booking');
+    }
 
+    public function mybrone(Request $request) {
         $token = $request->header('Authorization');
         $redToken = str_replace('Bearer ', '', $token);
         $getToken = Main::where('api_token', $redToken)->with('passenger')->first();
@@ -232,6 +235,10 @@ class BookingController extends Controller
         ], 200);
     }
 
+
+    public function redirectUser() {
+        return redirect()->route('user');
+    }
 
     public function user(Request $request) {
         $token = $request->header('Authorization');
